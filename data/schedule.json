@@ -1,0 +1,18 @@
+{
+  "enabled": true,
+  "timezone": "Asia/Manila",
+  "days": [
+    3,
+    5
+  ],
+  "times": [
+    "09:00",
+    "15:00"
+  ],
+  "source": "openmeteo",
+  "locations": [
+    "naga",
+    "milaor"
+  ],
+  "note": "days: 0 Sunday through 6 Saturday; times use 24-hour Philippine Time. GitHub checks every 15 minutes."
+}

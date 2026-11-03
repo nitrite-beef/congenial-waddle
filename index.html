@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10243a">
+  <title>Bicol Weather Monitor</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <div><p class="eyebrow">CAMARINES SUR · PHILIPPINES</p><h1>Bicol Weather Monitor</h1><p class="muted">Historical observations, live model forecasts, and scheduled records</p></div>
+  <button id="themeButton" class="secondary">Toggle theme</button>
+</header>
+<main>
+  <section class="toolbar panel">
+    <label>Location<select id="locationSelect"><option value="naga">Naga City</option><option value="milaor">Milaor</option></select></label>
+    <label>Data source<select id="sourceSelect"><option value="openmeteo">Open-Meteo</option><option value="windy">Windy Point Forecast</option><option value="nasa">NASA POWER</option></select></label>
+    <label>View<select id="viewSelect"><option value="forecast">Forecast</option><option value="historical">Historical</option><option value="compare">Compare sources</option></select></label>
+    <label>Start date<input id="dateInput" type="date"></label>
+    <button id="refreshButton">Refresh data</button>
+  </section>
+  <div id="status" class="status" role="status">Loading weather data…</div>
+  <section class="section-heading"><div><p class="eyebrow">WEATHER OVERVIEW</p><h2 id="pageHeading">7-day forecast</h2></div><span id="updatedLabel" class="muted"></span></section>
+  <section id="cards" class="cards"></section>
+  <section class="panel notice"><strong>Data interpretation</strong><p>Forecasts are model guidance, not guaranteed local observations. NASA POWER is satellite/model-based and has a processing delay of several days. It is intended for historical analysis and climatology, not real-time conditions or forecasts. Missing variables are shown as unavailable rather than estimated.</p></section>
+  <section id="charts" class="chart-grid">
+    <article class="panel"><h3>Temperature</h3><p class="source-note" id="tempSource"></p><canvas id="temperatureChart"></canvas></article>
+    <article class="panel"><h3>Rainfall</h3><p class="source-note" id="rainSource"></p><canvas id="rainChart"></canvas></article>
+    <article class="panel"><h3>Wind speed</h3><p class="source-note" id="windSource"></p><canvas id="windChart"></canvas></article>
+  </section>
+  <section class="panel">
+    <div class="section-heading"><div><p class="eyebrow">NEXT 48 HOURS</p><h2>Hourly forecast</h2></div><span id="hourlySource" class="source-note"></span></div>
+    <div class="table-wrap"><table><thead><tr><th>Time</th><th>Condition</th><th>Temp.</th><th>Rain</th><th>Rain chance</th><th>Humidity</th><th>Wind</th><th>Pressure</th><th>Cloud</th></tr></thead><tbody id="hourlyRows"></tbody></table></div>
+  </section>
+  <section class="panel">
+    <div class="section-heading"><div><p class="eyebrow">DATA HISTORY</p><h2>Recorded observations</h2></div><span class="source-note">From data/records.json</span></div>
+    <div class="table-wrap"><table><thead><tr><th>Recorded at (PHT)</th><th>Location</th><th>Source</th><th>Temperature</th><th>Rainfall</th><th>Humidity</th></tr></thead><tbody id="recordRows"></tbody></table></div>
+  </section>
+  <section class="panel">
+    <div class="section-heading"><div><p class="eyebrow">AUTOMATION</p><h2>Recording schedule</h2></div><span class="source-note">Configured in data/schedule.json</span></div>
+    <p>GitHub Actions checks this schedule every 15 minutes. Edit <code>data/schedule.json</code> in your repository to change recording days, times, locations, or source. Times use Philippine Time (UTC+8).</p>
+    <pre id="scheduleText">Loading schedule…</pre>
+  </section>
+  <footer>Sources: Open-Meteo, NASA POWER, Windy. See README for attribution and API notes.</footer>
+</main>
+<script type="module" src="app.js"></script>
+</body></html>
