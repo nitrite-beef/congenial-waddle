@@ -1,144 +1,144 @@
 {
-  "recorded_at_pht": "2026-11-18 16:12",
+  "recorded_at_pht": "2026-11-20 16:05",
   "source": "Open-Meteo",
   "locations": {
     "Naga City": {
       "current": {
-        "time": "2026-11-18T16:00",
+        "time": "2026-11-20T16:00",
         "interval": 900,
-        "temperature_2m": 31.1,
-        "relative_humidity_2m": 68,
-        "precipitation": 0.1,
-        "wind_speed_10m": 6.9,
+        "temperature_2m": 28.7,
+        "relative_humidity_2m": 74,
+        "precipitation": 0.2,
+        "wind_speed_10m": 14.0,
         "wind_direction_10m": 31,
-        "pressure_msl": 1012.7,
-        "cloud_cover": 14,
-        "weather_code": 51
+        "pressure_msl": 1012.8,
+        "cloud_cover": 99,
+        "weather_code": 53
       },
       "daily_forecast": {
         "time": [
-          "2026-11-18",
-          "2026-11-19",
           "2026-11-20",
           "2026-11-21",
           "2026-11-22",
           "2026-11-23",
-          "2026-11-24"
+          "2026-11-24",
+          "2026-11-25",
+          "2026-11-26"
         ],
         "temperature_2m_max": [
+          32.8,
+          31.7,
+          32.9,
+          32.2,
           33.0,
-          33.2,
-          31.8,
-          31.8,
-          30.5,
-          31.3,
-          32.2
+          31.4,
+          33.2
         ],
         "temperature_2m_min": [
-          25.7,
-          24.9,
-          23.6,
-          25.1,
-          24.0,
-          24.0,
-          24.1
+          23.9,
+          25.2,
+          24.8,
+          24.5,
+          25.2,
+          24.8,
+          24.3
         ],
         "precipitation_sum": [
-          1.5,
+          2.3,
           0.3,
           0.0,
-          7.4,
-          17.7,
-          4.2,
-          2.4
+          0.6,
+          1.0,
+          5.1,
+          0.0
         ],
         "precipitation_probability_max": [
-          34,
-          4,
-          22,
-          92,
-          59,
-          80,
-          42
+          35,
+          61,
+          25,
+          90,
+          49,
+          57,
+          45
         ],
         "wind_speed_10m_max": [
-          8.5,
-          16.8,
-          20.9,
-          16.4,
-          15.9,
-          17.2,
-          9.9
+          16.6,
+          18.9,
+          11.5,
+          16.0,
+          10.1,
+          10.9,
+          7.1
         ]
       }
     },
     "Milaor": {
       "current": {
-        "time": "2026-11-18T16:00",
+        "time": "2026-11-20T16:00",
         "interval": 900,
-        "temperature_2m": 31.1,
-        "relative_humidity_2m": 68,
-        "precipitation": 0.1,
-        "wind_speed_10m": 6.9,
+        "temperature_2m": 28.7,
+        "relative_humidity_2m": 74,
+        "precipitation": 0.2,
+        "wind_speed_10m": 14.0,
         "wind_direction_10m": 31,
-        "pressure_msl": 1012.7,
-        "cloud_cover": 14,
-        "weather_code": 51
+        "pressure_msl": 1012.8,
+        "cloud_cover": 99,
+        "weather_code": 53
       },
       "daily_forecast": {
         "time": [
-          "2026-11-18",
-          "2026-11-19",
           "2026-11-20",
           "2026-11-21",
           "2026-11-22",
           "2026-11-23",
-          "2026-11-24"
+          "2026-11-24",
+          "2026-11-25",
+          "2026-11-26"
         ],
         "temperature_2m_max": [
+          32.8,
+          31.7,
+          32.9,
+          32.2,
           33.0,
-          33.2,
-          31.8,
-          31.8,
-          30.5,
-          31.3,
-          32.2
+          31.4,
+          33.2
         ],
         "temperature_2m_min": [
-          25.7,
-          24.9,
-          23.6,
-          25.1,
-          24.0,
-          24.0,
-          24.1
+          23.9,
+          25.2,
+          24.8,
+          24.5,
+          25.2,
+          24.8,
+          24.3
         ],
         "precipitation_sum": [
-          1.5,
+          2.3,
           0.3,
           0.0,
-          7.4,
-          17.7,
-          4.2,
-          2.4
+          0.6,
+          1.0,
+          5.1,
+          0.0
         ],
         "precipitation_probability_max": [
-          34,
-          4,
-          22,
-          92,
-          59,
-          80,
-          42
+          35,
+          61,
+          25,
+          90,
+          49,
+          57,
+          45
         ],
         "wind_speed_10m_max": [
-          8.5,
-          16.8,
-          20.9,
-          16.4,
-          15.9,
-          17.2,
-          9.9
+          16.6,
+          18.9,
+          11.5,
+          16.0,
+          10.1,
+          10.9,
+          7.1
         ]
       }
     }
